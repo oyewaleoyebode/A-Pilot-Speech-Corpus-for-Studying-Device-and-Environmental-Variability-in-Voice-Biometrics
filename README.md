@@ -24,7 +24,7 @@ By providing a balanced collection of cross-device, cross-environment recordings
 -	Low-resource settings: Valuable for studies where large datasets are unavailable, providing a pilot-scale corpus for transfer learning and comparative evaluation.
 -	Reusability: Organized with speaker-wise folders and metadata files for easy integration into machine learning pipelines.
 
-  ## Dataset Contents
+
 ### Audio files (.wav)
 - 12 anonymized speaker folders (`speaker_01`, `speaker_02`, …)  
 - Each folder contains ~40 utterances  
@@ -61,42 +61,22 @@ Two environments were included to simulate real-world usage:
 - Indoor recordings: Collected in the NAIST Building A lobby, a semi-controlled environment with background activity such as footsteps and conversations.
 - Outdoor recordings: Captured in campus surroundings, incorporating natural noise sources such as wind, traffic, and crowd movement.
 
----
-
-## Validation
-
-- The dataset underwent multiple validation procedures to ensure consistency, usability, and reliability for research in speaker verification and voice biometrics. All audio files were manually inspected to verify correct labeling, completeness, and the absence of distortions such as clipping or truncated speech. Sampling rates and bit depths were standardized to ensure comparability across devices.
-
-- In addition, we evaluated its applicability in speaker identification tasks using three different speech enhancement approaches: spectral subtraction, Wiener filtering, and adaptive filtering. Results showed that the adaptive filter achieved the highest performance, with a 97% success rate, outperforming spectral subtraction (92%) and Wiener filtering (89%). The adaptive filter consistently yielded higher signal-to-noise ratio (SNR) values, lower mean squared error (MSE), and reduced weighted spectral slope (WSS) distortion, effectively reducing background noise while maintaining the naturalness of speech signals.
-
-- These validation results confirm that the dataset captures sufficient variability to challenge baseline models while remaining suitable for robust algorithm development. At the same time, they highlight potential research opportunities in addressing device-induced and environment-induced variations.
-
-- It is important to note that while the adaptive filter offers superior accuracy, it introduces higher computational complexity compared to simpler enhancement techniques. This may limit its suitability for real-time deployment in resource-constrained mobile devices, a challenge that future research should address through optimization techniques or hardware acceleration. Expanding the dataset to include a broader range of speakers and devices, and integrating deep learning–based enhancement and multimodal biometrics, are additional directions that could further strengthen the applicability and generalizability of this resource.
-
-
-✅ Results confirm the dataset captures sufficient variability to challenge baseline models while supporting robust algorithm development.
-
----
-
-## Applications
-- Benchmarking **speaker identification & verification** models  
-- Studying **speech enhancement** under noisy / degraded conditions  
-- Exploring **spoofing resilience** and **liveness detection**  
-- Transfer learning in **low-resource settings**  
-
----
-
-### Related publication
-O. O. Oyewale, M. D. Hossain, Y. Taenaka, and Y. Kadobayashi, *Optimizing Voice Biometric Verification in Banking with Machine Learning for Speaker Identification*, Proc. 2024 IEEE 29th Asia Pacific Conf. on Communications (APCC), pp. 377–384, doi: [10.1109/APCC62576.2024.10768085](https://doi.org/10.1109/APCC62576.2024.10768085).
- 
-** View Repository: https://github.com/oyewaleoyebode/Optimizing-Voice-Biometric-Verification-in-Banking-with-Machine-Learning-for-Speaker-Identification **
----
 
 ## License
 This dataset is released under the **Creative Commons Attribution 4.0 International (CC BY 4.0)** license.  
 You are free to **use, share, and adapt** the dataset with appropriate attribution.  
 
-[https://creativecommons.org/licenses/by/4.0/](https://creativecommons.org/licenses/by/4.0/)
+
+### Related publication
+O. O. Oyewale, M. D. Hossain, Y. Taenaka, and Y. Kadobayashi, *Optimizing Voice Biometric Verification in Banking with Machine Learning for Speaker Identification*, Proc. 2024 IEEE 29th Asia Pacific Conf. on Communications (APCC), pp. 377–384, doi: [10.1109/APCC62576.2024.10768085](https://doi.org/10.1109/APCC62576.2024.10768085).
+ 
+**View Repository: https://github.com/oyewaleoyebode/Optimizing-Voice-Biometric-Verification-in-Banking-with-Machine-Learning-for-Speaker-Identification**
+
+
+## Download the Dataset
+The dataset is available on **Hugging Face**:  
+👉 [https://huggingface.co/datasets/Oye12/A_Pilot_Speech_Corpus](https://huggingface.co/datasets/Oye12/A_Pilot_Speech_Corpus)
+
 
 ---
 ## Citation
